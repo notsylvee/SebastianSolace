@@ -10,7 +10,7 @@ module.exports = {
             "Look. I know scaring this punk is entertaining and all, but, do you mind saving that after visiting hours are over? I think I have my fair share of existential dread as is, *Heh* Appreciate it."
         ];
         const voiceLine = voiceLines[Math.floor(Math.random() * voiceLines.length)];
-        if (chance < 80) {
+        if (chance < 85) {
             return;
           } else {
             message.channel.send(`${voiceLine}`);
