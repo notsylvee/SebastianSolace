@@ -11,7 +11,7 @@ module.exports = {
             if (interaction.user.id !== "1018686464000807003")
               return await interaction.reply({
                 content: `<:forbidden:1266829648344645694> Invalid permission`,
-                ephemeral: true,
+                flags: MessageFlags.Ephemeral,
               });
           }
 
@@ -25,7 +25,7 @@ module.exports = {
             console.log(error);
             await interaction.reply({
                 content: 'There was an error while executing this command!', 
-                ephemeral: true
+                flags: MessageFlags.Ephemeral
             });
         } 
 
