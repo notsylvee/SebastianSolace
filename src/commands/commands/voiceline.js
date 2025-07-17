@@ -13,6 +13,6 @@ module.exports = {
         const voicelines = voicelinesMap["voicelines"];
         const voiceline = voicelines[Math.floor(Math.random() * voicelines.length)];
             
-        interaction.reply({ content: `${voiceline.text}` });
+        interaction.reply({ content: `<:SebastianSolace:1395293888583045140> ${voiceline.text}` });
       },
 }

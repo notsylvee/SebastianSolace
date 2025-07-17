@@ -3,7 +3,6 @@ module.exports = {
     async execute(message) {
 
         if (message.author.id !== "1318490033464021032") return;
-        if (message.channel.id === "1344570100589662268") return;
         const chance = Math.random() * 100;
         const voiceLines = [
             "NO! No! Not again... *Eugh* *Arugh* Can you please just... TRY to be quiet until they leave the shop? I really don't need the unnecessary whisper right now. Thank you.",
@@ -14,7 +13,7 @@ module.exports = {
         if (chance < 90) {
             return;
           } else {
-            message.channel.send(`${voiceLine}`);
+            message.channel.send(`<:SebastianSolace:1395293888583045140> ${voiceLine}`);
           };
     },
 };
