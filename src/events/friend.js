@@ -5,7 +5,6 @@ module.exports = {
   name: "messageCreate",
   async execute(message) {
 
-    if (message.author.bot || !message.guild) return;
     if (message.author.id !== "1318490033464021032") return;
     if (!message.guild.members.me.permissionsIn(message.channel.id).has(PermissionFlagsBits.SendMessages)) return;
         
@@ -18,7 +17,7 @@ module.exports = {
     if (chance < 90) {
       return;
     } else {
-      message.channel.send(`<:SebastianSolace:1395293888583045140> ${voiceline}`);
+      message.channel.send(`<:SebastianSolace:1395293888583045140> ${voiceline.text}`);
     };
   },
 };

@@ -18,7 +18,7 @@ module.exports = {
     if (chance < 648) {
       return;
     } else {
-      message.channel.send(`<:SebastianSolace:1395293888583045140> ${voiceline}`);
+      message.channel.send(`<:SebastianSolace:1395293888583045140> ${voiceline.text}`);
     };
   },
 };
