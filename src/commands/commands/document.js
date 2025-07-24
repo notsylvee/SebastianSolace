@@ -15,6 +15,7 @@ module.exports = {
         const document = documents[Math.floor(Math.random() * documents.length)];
         
         const embed = new EmbedBuilder()
+            .setColor(`#e63f3f`)
             .setTitle(`${document.title}`)
             .setImage(`https://cdn.sylvee.xyz/doc${document.path}.png`)
 
