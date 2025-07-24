@@ -9,19 +9,9 @@ module.exports = {
 
         const command = client.commands.get(interaction.commandName);
 
-        if (command.owner == true) {
-            if (interaction.user.id !== "1018686464000807003")
-              return await interaction.reply({
-                content: `<:forbidden:1266829648344645694> Invalid permission`,
-                flags: MessageFlags.Ephemeral,
-              });
-          }
-
         if (!command) return
         
         try{
-
-
             await command.execute(interaction, client);
         } catch (error) {
             console.log(error);
