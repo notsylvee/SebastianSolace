@@ -13,6 +13,6 @@ module.exports = {
         const voicelines = voicelinesMap["scanner"];
         const voiceline = voicelines[Math.floor(Math.random() * voicelines.length)];
             
-        interaction.reply({ content: `<:SebastiansScanner:1398476449417134150> ${voiceline.text}` });
+        interaction.reply({ content: `<:SebastiansScanner:1398805366179106817> ${voiceline.text}` });
       },
 }
